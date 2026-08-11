@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ôn Tập Trắc Nghiệm Triết Học Mác - Lênin | 381 Câu Hỏi Chuẩn</title>
+  <meta name="description" content="Ứng dụng ôn tập trắc nghiệm Triết học Mác - Lênin với 381 câu hỏi, phản hồi đúng sai tức thì, chế độ thi thử, flashcard ghi nhớ và giải thích chi tiết.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toast notification -->
+  <div id="toast-container" class="toast-container"></div>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow">
+    <div class="glow-circle-1"></div>
+    <div class="glow-circle-2"></div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- App Header -->
+  <header>
+    <div class="header-container">
+      <div class="brand" onclick="window.location.reload()">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+            <path d="M6 6h10"></path>
+            <path d="M6 10h10"></path>
+            <path d="M6 14h6"></path>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h1>TRIẾT HỌC MÁC - LÊNIN</h1>
+          <span>HỆ THỐNG ÔN TẬP & THI THỬ TRẮC NGHIỆM</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="streak-badge" title="Chuỗi trả lời đúng liên tiếp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c.5 3 2 4.5 4 6.5 2.5 2.5 3.5 5 3.5 7.5a7.5 7.5 0 1 1-15 0c0-2.5 1-5 3.5-7.5C10 6.5 11.5 5 12 2Z"></path>
+          </svg>
+          <span id="streak-count">0</span>
+        </div>
+        <button id="btn-theme" class="btn-icon" title="Đổi giao diện Sáng / Tối">
+          <svg id="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" style="display: none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <div class="nav-tabs-wrapper">
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="practice">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        <span>Luyện tập</span>
+      </button>
+      <button class="tab-btn" data-tab="exam">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>Thi thử</span>
+      </button>
+      <button class="tab-btn" data-tab="flashcard">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+          <line x1="3" x2="21" y1="9" y2="9"></line>
+          <line x1="9" x2="9" y1="21" y2="9"></line>
+        </svg>
+        <span>Flashcard 3D</span>
+      </button>
+      <button class="tab-btn" data-tab="mistakes">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="15" y1="9" x2="9" y2="15"></line>
+          <line x1="9" y1="9" x2="15" y2="15"></line>
+        </svg>
+        <span>Câu làm sai</span>
+        <span class="tab-badge" id="badge-mistakes">0</span>
+      </button>
+      <button class="tab-btn" data-tab="starred">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        <span>Đã đánh dấu</span>
+        <span class="tab-badge" id="badge-starred">0</span>
+      </button>
+      <button class="tab-btn" data-tab="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Tra cứu câu hỏi</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- SECTION 1: PRACTICE MODE (and Mistakes/Starred) -->
+    <section id="section-practice">
+      <!-- Filter and Quick Stats Bar -->
+      <div class="filter-bar">
+        <div class="chapter-select-wrapper">
+          <select id="chapter-select" class="chapter-select"></select>
+          <span class="select-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <div class="quick-stats">
+          <button id="btn-toggle-answer" class="btn-mode-toggle" title="Bật/Tắt chế độ luôn hiện đáp án đúng và lời giải">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span id="toggle-answer-text">Hiện đáp án luôn</span>
+          </button>
+
+          <div class="stat-item correct">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Đúng:</span>
+            <strong id="stat-correct">0</strong>
+          </div>
+          <div class="stat-item wrong">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <span>Sai:</span>
+            <strong id="stat-wrong">0</strong>
+          </div>
+          <div class="stat-item remaining">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Còn lại:</span>
+            <strong id="stat-remaining">0</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice Grid Container -->
+      <div class="practice-container">
+        <!-- Main Question Card -->
+        <div class="quiz-card">
+          <div class="card-top-bar">
+            <div class="question-meta">
+              <span id="badge-chapter" class="badge-chapter">Bài 1: Triết học</span>
+              <span id="badge-tag" class="badge-tag">CLO1</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div class="question-counter">Câu <span id="current-q-num">1</span> / <span id="total-q-num">381</span></div>
+              <button id="btn-star" class="btn-star" title="Đánh dấu câu hỏi quan trọng">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="question-text" class="question-text">Đang tải nội dung câu hỏi...</div>
+
+          <div id="options-container" class="options-list"></div>
+
+          <!-- Explanation Box -->
+          <div id="explanation-box" class="explanation-box">
+            <div class="explanation-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7Z"></path>
+                <path d="M9 21h6"></path>
+              </svg>
+              <span>Cơ sở lý luận & Giải thích chi tiết:</span>
+            </div>
+            <div id="explanation-text" class="explanation-text"></div>
+          </div>
+
+          <!-- Question Navigation Bar -->
+          <div class="quiz-nav-bar">
+            <button id="btn-prev" class="btn-nav">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Câu trước</span>
+            </button>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button id="btn-restart" class="btn-nav" title="Về lại câu số 1 (giữ nguyên các câu đã chọn)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
+                </svg>
+                <span>Về câu đầu</span>
+              </button>
+              <button id="btn-shuffle" class="btn-nav" title="Xáo trộn ngẫu nhiên câu hỏi (vẫn giữ đáp án đã chọn)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 3 21 3 21 8"></polyline>
+                  <line x1="4" y1="20" x2="21" y2="3"></line>
+                  <polyline points="21 16 21 21 16 21"></polyline>
+                  <line x1="15" y1="15" x2="21" y2="21"></line>
+                  <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                <span>Trộn câu</span>
+              </button>
+            </div>
+            <button id="btn-next" class="btn-nav btn-primary">
+              <span>Câu tiếp theo</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Matrix Sidebar -->
+        <aside class="matrix-sidebar">
+          <div class="matrix-header">
+            <h3>Danh sách câu hỏi</h3>
+            <button id="btn-clear-history" class="btn-clear-history" title="Chỉ bấm khi bạn muốn xóa toàn bộ lịch sử đã làm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6h18"></path>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              <span>Xóa lịch sử</span>
+            </button>
+          </div>
+          <div class="matrix-legend">
+            <div class="legend-item"><span class="legend-dot dot-correct"></span> Đúng</div>
+            <div class="legend-item"><span class="legend-dot dot-wrong"></span> Sai</div>
+            <div class="legend-item"><span class="legend-dot dot-current"></span> Đang làm</div>
+            <div class="legend-item"><span class="legend-dot dot-starred"></span> Đã lưu</div>
+          </div>
+          <div id="matrix-grid" class="matrix-grid"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EXAM MODE -->
+    <section id="section-exam" style="display: none;">
+      <!-- Setup View -->
+      <div id="exam-setup" class="exam-setup-card">
+        <div style="width: 56px; height: 56px; border-radius: 16px; background: rgba(225, 29, 72, 0.15); border: 1px solid rgba(225, 29, 72, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; color: var(--accent-red);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <h2>CHẾ ĐỘ THI THỬ TRẮC NGHIỆM</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Mô phỏng kỳ thi trắc nghiệm Triết học Mác - Lênin với tính năng đếm ngược thời gian và chấm điểm tự động.
+        </p>
+
+        <div class="exam-setup-options">
+          <div class="exam-option-card active" data-count="20" data-time="15">
+            <h4>Đề thi Nhanh (20 câu)</h4>
+            <p>Thời gian: 15 phút (Đề kiểm tra chuẩn)</p>
+          </div>
+          <div class="exam-option-card" data-count="30" data-time="25">
+            <h4>Đề Giữa kỳ (30 câu)</h4>
+            <p>Thời gian: 25 phút (Đề thi giữa kỳ)</p>
+          </div>
+          <div class="exam-option-card" data-count="40" data-time="35">
+            <h4>Đề Cuối kỳ (40 câu)</h4>
+            <p>Thời gian: 35 phút (Chuẩn đề thi kết thúc học phần)</p>
+          </div>
+        </div>
+
+        <button id="btn-start-exam" class="btn-nav btn-primary" style="margin: 0 auto; padding: 0.85rem 2.5rem; font-size: 1.05rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span>BẮT ĐẦU LÀM BÀI</span>
+        </button>
+      </div>
+
+      <!-- Exam In Progress -->
+      <div id="exam-running" style="display: none;">
+        <div class="exam-timer-bar">
+          <span id="exam-progress" style="font-weight: 600; color: var(--text-primary);">Đã làm: 0 câu</span>
+          <div id="exam-timer" class="timer-display">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span id="timer-text">15:00</span>
+          </div>
+          <button id="btn-submit-exam" class="btn-nav btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13"></path>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            <span>Nộp bài thi</span>
+          </button>
+        </div>
+
+        <div id="exam-questions-container"></div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button onclick="document.getElementById('btn-submit-exam').click()" class="btn-nav btn-primary" style="padding: 0.85rem 3rem; font-size: 1.1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13"></path>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            <span>HOÀN THÀNH VÀ NỘP BÀI</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Exam Results -->
+      <div id="exam-results" class="exam-results-card" style="display: none;">
+        <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); border: 2px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; color: var(--success);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+            <path d="M4 22h16"></path>
+            <path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c0-1.8 1.2-3.4 3-3.92V4H7v6.74c1.8.52 3 2.12 3 3.92Z"></path>
+          </svg>
+        </div>
+        <h2>KẾT QUẢ BÀI THI</h2>
+        <div class="score-circle">
+          <span id="exam-res-score" class="score-num">8.5</span>
+          <span class="score-total">Điểm / 10</span>
+        </div>
+
+        <div class="result-stats-grid">
+          <div class="res-stat-box">
+            <div id="exam-res-correct" class="res-stat-val" style="color: var(--success);">17/20</div>
+            <div class="res-stat-lbl">Số câu đúng</div>
+          </div>
+          <div class="res-stat-box">
+            <div id="exam-res-percent" class="res-stat-val" style="color: var(--accent-gold);">85%</div>
+            <div class="res-stat-lbl">Độ chính xác</div>
+          </div>
+          <div class="res-stat-box">
+            <div id="exam-res-time" class="res-stat-val" style="color: var(--accent-cyan);">11p 24s</div>
+            <div class="res-stat-lbl">Thời gian làm bài</div>
+          </div>
+        </div>
+
+        <button id="btn-retake-exam" class="btn-nav btn-primary" style="margin: 1.5rem auto 0 auto; padding: 0.85rem 2.5rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+          </svg>
+          <span>LÀM ĐỀ THI MỚI</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FLASHCARD MODE -->
+    <section id="section-flashcard" style="display: none;">
+      <div class="flashcard-wrapper">
+        <div id="flashcard-3d" class="flashcard-3d">
+          <!-- Front Face -->
+          <div class="flashcard-face">
+            <div class="card-top-bar">
+              <span id="fc-chapter" class="badge-chapter">Bài 1</span>
+              <span id="fc-counter" class="question-counter">1 / 381</span>
+            </div>
+            <div id="fc-question" class="question-text" style="font-size: 1.25rem; text-align: center; margin: auto 0;">
+              Nội dung câu hỏi flashcard...
+            </div>
+            <div class="flashcard-hint">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg>
+              <span>Nhấn chuột hoặc phím Space để lật xem đáp án</span>
+            </div>
+          </div>
+
+          <!-- Back Face -->
+          <div class="flashcard-face flashcard-back">
+            <div class="card-top-bar">
+              <span class="badge-chapter" style="background: rgba(16, 185, 129, 0.15); color: var(--success); border-color: rgba(16, 185, 129, 0.4); display: inline-flex; align-items: center; gap: 0.35rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>ĐÁP ÁN CHÍNH XÁC</span>
+              </span>
+              <span class="question-counter">Giải nghĩa</span>
+            </div>
+            <div id="fc-answer" style="font-size: 1.35rem; font-weight: 700; color: var(--success); text-align: center; margin: auto 0;">
+              Đáp án đúng...
+            </div>
+            <div id="fc-explanation" class="explanation-text" style="text-align: center; font-size: 0.95rem; margin-top: 1rem;">
+              Giải thích chi tiết...
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcard Navigation -->
+        <div class="quiz-nav-bar" style="margin-top: 1.5rem;">
+          <button id="btn-fc-prev" class="btn-nav">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Thẻ trước</span>
+          </button>
+          <button id="btn-fc-flip" class="btn-nav btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+            <span>Lật thẻ</span>
+          </button>
+          <button id="btn-fc-next" class="btn-nav">
+            <span>Thẻ tiếp theo</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SEARCH / QUESTION BANK -->
+    <section id="section-search" style="display: none;">
+      <div class="search-bar-container">
+        <span class="search-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input id="search-input" type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm (ví dụ: thực tiễn, Lênin, duy vật biện chứng, lượng chất...)">
+      </div>
+
+      <div id="search-count" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 600;">
+        Đang tải ngân hàng câu hỏi...
+      </div>
+
+      <div id="search-results" class="search-results-list"></div>
+    </section>
+  </main>
+
+  <!-- Keyboard Shortcuts Helper Footer -->
+  <div class="keyboard-shortcuts-bar">
+    <div class="kbd-item"><kbd>A</kbd> / <kbd>B</kbd> / <kbd>C</kbd> / <kbd>D</kbd> Chọn đáp án</div>
+    <div class="kbd-item"><kbd>←</kbd> <kbd>→</kbd> Chuyển câu hỏi</div>
+    <div class="kbd-item"><kbd>Space</kbd> Lật Flashcard</div>
+  </div>
+
+  <!-- Custom Confirm Modal -->
+  <div id="confirm-modal" class="modal-backdrop" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18"></path>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          <line x1="10" y1="11" x2="10" y2="17"></line>
+          <line x1="14" y1="11" x2="14" y2="17"></line>
+        </svg>
+      </div>
+      <h3 id="modal-title">Xóa lịch sử làm bài?</h3>
+      <p id="modal-desc">Thao tác này sẽ đặt lại toàn bộ các câu hỏi bạn đã chọn và xóa danh sách câu làm sai để bắt đầu ôn tập mới.</p>
+      <div class="modal-actions">
+        <button id="btn-modal-cancel" class="btn-nav">Hủy bỏ</button>
+        <button id="btn-modal-confirm" class="btn-nav btn-danger">Đồng ý xóa</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="questions_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
