@@ -68,6 +68,7 @@ class QuizApp {
   constructor() {
     this.theme = localStorage.getItem('theme') || 'dark';
     this.alwaysShowAnswers = localStorage.getItem('alwaysShowAnswers') === 'true';
+    this.shuffleOptions = localStorage.getItem('shuffleOptions') !== 'false'; // Default to true
 
     this.mode = 'practice'; // 'practice' | 'exam' | 'flashcard' | 'mistakes' | 'starred' | 'search'
     this.currentChapter = 'all';
@@ -79,11 +80,15 @@ class QuizApp {
     this.mistakeIds = new Set(JSON.parse(localStorage.getItem('mistakeIds') || '[]'));
     this.streak = parseInt(localStorage.getItem('streak') || '0', 10);
 
+    // Dynamic option shuffling map: questionId -> array of original indices [2, 0, 3, 1]
+    this.optionOrders = {};
+
     // Exam state
     this.exam = {
       active: false,
       questions: [],
       answers: {},
+      optionOrders: {},
       timeRemaining: 0,
       totalTime: 0,
       timerInterval: null,
@@ -100,6 +105,7 @@ class QuizApp {
     this.initElements();
     this.applyTheme(this.theme);
     this.updateToggleAnswerBtn();
+    this.updateToggleShuffleBtn();
     this.bindEvents();
     this.populateChapterSelect();
     this.loadActiveQuestions();
@@ -112,6 +118,8 @@ class QuizApp {
     this.chapterSelect = document.getElementById('chapter-select');
     this.btnToggleAnswer = document.getElementById('btn-toggle-answer');
     this.toggleAnswerText = document.getElementById('toggle-answer-text');
+    this.btnToggleShuffle = document.getElementById('btn-toggle-shuffle-options');
+    this.toggleShuffleText = document.getElementById('toggle-shuffle-text');
 
     // Tabs
     this.tabButtons = document.querySelectorAll('.tab-btn');
@@ -213,6 +221,18 @@ class QuizApp {
       this.renderQuestion();
     });
 
+    // Toggle Shuffle Options Mode
+    if (this.btnToggleShuffle) {
+      this.btnToggleShuffle.addEventListener('click', () => {
+        this.shuffleOptions = !this.shuffleOptions;
+        localStorage.setItem('shuffleOptions', this.shuffleOptions);
+        this.optionOrders = {}; // Reset and re-shuffle options
+        this.updateToggleShuffleBtn();
+        this.renderQuestion();
+        this.showToast(this.shuffleOptions ? 'Đã bật đảo đáp án (A, B, C, D ngẫu nhiên)' : 'Đã tắt đảo đáp án (thứ tự gốc)');
+      });
+    }
+
     // Star current question
     this.btnStar.addEventListener('click', () => {
       const curQ = this.getCurrentQuestion();
@@ -275,13 +295,22 @@ class QuizApp {
       if (this.mode === 'practice' || this.mode === 'mistakes' || this.mode === 'starred') {
         if (e.key === 'ArrowRight') this.navigateQuestion(1);
         if (e.key === 'ArrowLeft') this.navigateQuestion(-1);
-        if (['1', '2', '3', '4'].includes(e.key)) {
-          const idx = parseInt(e.key, 10) - 1;
-          this.handleOptionSelect(idx);
-        }
-        if (['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D'].includes(e.key)) {
-          const charMap = { a: 0, b: 1, c: 2, d: 3 };
-          this.handleOptionSelect(charMap[e.key.toLowerCase()]);
+        const curQ = this.getCurrentQuestion();
+        if (curQ) {
+          const order = this.getOptionOrder(curQ);
+          if (['1', '2', '3', '4'].includes(e.key)) {
+            const displayIdx = parseInt(e.key, 10) - 1;
+            if (displayIdx < order.length) {
+              this.handleOptionSelect(order[displayIdx]);
+            }
+          }
+          if (['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D'].includes(e.key)) {
+            const charMap = { a: 0, b: 1, c: 2, d: 3 };
+            const displayIdx = charMap[e.key.toLowerCase()];
+            if (displayIdx < order.length) {
+              this.handleOptionSelect(order[displayIdx]);
+            }
+          }
         }
       } else if (this.mode === 'flashcard') {
         if (e.key === ' ' || e.key === 'Enter') {
@@ -300,8 +329,38 @@ class QuizApp {
       this.toggleAnswerText.textContent = 'Đang hiện đáp án';
     } else {
       this.btnToggleAnswer.classList.remove('active');
-      this.toggleAnswerText.textContent = 'Hiện đáp án luôn';
+      this.toggleAnswerText.textContent = 'Hiện đáp án';
     }
+  }
+
+  updateToggleShuffleBtn() {
+    if (!this.btnToggleShuffle) return;
+    if (this.shuffleOptions) {
+      this.btnToggleShuffle.classList.add('active');
+      if (this.toggleShuffleText) this.toggleShuffleText.textContent = 'Đang đảo đáp án';
+      this.btnToggleShuffle.title = 'Đang bật đảo vị trí các đáp án A, B, C, D ngẫu nhiên (Nhấn để tắt)';
+    } else {
+      this.btnToggleShuffle.classList.remove('active');
+      if (this.toggleShuffleText) this.toggleShuffleText.textContent = 'Đảo đáp án: Tắt';
+      this.btnToggleShuffle.title = 'Đang hiển thị thứ tự gốc của đáp án (Nhấn để bật đảo đáp án)';
+    }
+  }
+
+  getOptionOrder(q) {
+    if (!q || !q.options) return [0, 1, 2, 3];
+    if (!this.shuffleOptions) {
+      return [0, 1, 2, 3].slice(0, q.options.length);
+    }
+    if (!this.optionOrders[q.id]) {
+      const order = [];
+      for (let i = 0; i < q.options.length; i++) order.push(i);
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+      this.optionOrders[q.id] = order;
+    }
+    return this.optionOrders[q.id];
   }
 
   applyTheme(theme) {
@@ -493,6 +552,7 @@ class QuizApp {
     const letters = ['A', 'B', 'C', 'D'];
     const chosenAnswer = this.userAnswers[q.id];
     const isAnswered = chosenAnswer !== undefined;
+    const order = this.getOptionOrder(q);
 
     const checkSvg = `
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -506,33 +566,34 @@ class QuizApp {
       </svg>
     `;
 
-    q.options.forEach((optText, idx) => {
+    order.forEach((origIdx, displayIdx) => {
+      const optText = q.options[origIdx];
       const btn = document.createElement('button');
       btn.className = 'option-btn';
       btn.innerHTML = `
-        <span class="opt-prefix">${letters[idx]}</span>
+        <span class="opt-prefix">${letters[displayIdx]}</span>
         <span class="opt-text">${optText}</span>
         <span class="opt-icon"></span>
       `;
 
       if (isAnswered) {
         btn.classList.add('disabled');
-        if (idx === q.answer) {
+        if (origIdx === q.answer) {
           btn.classList.add('correct');
           btn.querySelector('.opt-icon').innerHTML = checkSvg;
-        } else if (idx === chosenAnswer) {
+        } else if (origIdx === chosenAnswer) {
           btn.classList.add('wrong');
           btn.querySelector('.opt-icon').innerHTML = crossSvg;
         }
       } else if (this.alwaysShowAnswers) {
         // In Always Show Answers mode
-        if (idx === q.answer) {
+        if (origIdx === q.answer) {
           btn.classList.add('correct');
           btn.querySelector('.opt-icon').innerHTML = checkSvg;
         }
-        btn.addEventListener('click', () => this.handleOptionSelect(idx));
+        btn.addEventListener('click', () => this.handleOptionSelect(origIdx));
       } else {
-        btn.addEventListener('click', () => this.handleOptionSelect(idx));
+        btn.addEventListener('click', () => this.handleOptionSelect(origIdx));
       }
 
       this.optionsContainer.appendChild(btn);
@@ -603,6 +664,7 @@ class QuizApp {
       const j = Math.floor(Math.random() * (i + 1));
       [this.activeQuestions[i], this.activeQuestions[j]] = [this.activeQuestions[j], this.activeQuestions[i]];
     }
+    this.optionOrders = {}; // Re-shuffle option orders on shuffle questions
     this.currentQuestionIdx = 0;
     this.renderQuestion();
     this.renderMatrix();
@@ -759,6 +821,21 @@ class QuizApp {
     const shuffled = [...QUIZ_DATA].sort(() => 0.5 - Math.random());
     this.exam.questions = shuffled.slice(0, Math.min(qCount, shuffled.length));
     this.exam.answers = {};
+    this.exam.optionOrders = {};
+
+    // Shuffle option orders for exam questions if shuffleOptions is enabled
+    this.exam.questions.forEach((q, qIdx) => {
+      const order = [];
+      for (let i = 0; i < q.options.length; i++) order.push(i);
+      if (this.shuffleOptions) {
+        for (let i = order.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [order[i], order[j]] = [order[j], order[i]];
+        }
+      }
+      this.exam.optionOrders[qIdx] = order;
+    });
+
     this.exam.totalTime = durationMins * 60;
     this.exam.timeRemaining = this.exam.totalTime;
     this.exam.active = true;
@@ -808,10 +885,12 @@ class QuizApp {
       card.style.marginBottom = '1.5rem';
 
       let optionsHtml = '';
-      q.options.forEach((optText, optIdx) => {
+      const order = this.exam.optionOrders[qIdx] || [0, 1, 2, 3].slice(0, q.options.length);
+      order.forEach((origIdx, displayIdx) => {
+        const optText = q.options[origIdx];
         optionsHtml += `
-          <button class="option-btn exam-opt-btn" data-qidx="${qIdx}" data-optidx="${optIdx}">
-            <span class="opt-prefix">${letters[optIdx]}</span>
+          <button class="option-btn exam-opt-btn" data-qidx="${qIdx}" data-origidx="${origIdx}">
+            <span class="opt-prefix">${letters[displayIdx]}</span>
             <span class="opt-text">${optText}</span>
           </button>
         `;
@@ -833,14 +912,14 @@ class QuizApp {
     this.examQuestionsContainer.querySelectorAll('.exam-opt-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const qIdx = parseInt(btn.dataset.qidx, 10);
-        const optIdx = parseInt(btn.dataset.optidx, 10);
+        const origIdx = parseInt(btn.dataset.origidx, 10);
 
         // Deselect sibling buttons
         const parentList = btn.closest('.options-list');
         parentList.querySelectorAll('.exam-opt-btn').forEach(b => b.classList.remove('correct', 'active'));
         
         btn.classList.add('correct'); // Highlight selection
-        this.exam.answers[qIdx] = optIdx;
+        this.exam.answers[qIdx] = origIdx;
 
         // Update progress count
         const answeredCount = Object.keys(this.exam.answers).length;
