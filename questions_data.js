@@ -277,7 +277,7 @@ const QUIZ_DATA = [
       "Từ sự suy tư của con người về bản thân mình.",
       "Từ sự sáng tạo của nhà tư tưởng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -291,7 +291,7 @@ const QUIZ_DATA = [
       "Như một chỉnh thể thống nhất.",
       "Như một thực thể tồn tại cụ thể."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -347,7 +347,7 @@ const QUIZ_DATA = [
       "Chủ nghĩa duy lý.",
       "Duy vật tự phát."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -361,7 +361,7 @@ const QUIZ_DATA = [
       "Chủ nghĩa duy tâm chủ quan và chủ nghĩa duy tâm khách quan.",
       "Chủ nghĩa duy tâm nhất nguyên và chủ nghĩa duy tâm nhị nguyên."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -403,7 +403,7 @@ const QUIZ_DATA = [
       "Vấn đề mối quan hệ giữa tri thức và tình cảm.",
       "Vấn đề mối quan hệ giữa vật chất và vật thể"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -417,7 +417,7 @@ const QUIZ_DATA = [
       "Giữa ý thức và vật thể: cái nào có trước cái nào có sau? cái nào quyết định cái nao?; Và con người có nhận biết được các vật thể không?",
       "Giữa vật chất và ý thức: cái nào có trước, cái nào có sau? cái nào lệ thuộc cái nào?; Và con người có khả năng nhận biết được chính mình không?"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -445,7 +445,7 @@ const QUIZ_DATA = [
       "Triết học cổ điển Đức, Kinh tế Chính trị học cổ điển Anh và Chủ nghĩa Xã hội không tưởng ở Pháp.",
       "Triết học cổ điển Đức, Kinh tế Chính trị và Chủ nghĩa Xã hội không tưởng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -459,7 +459,7 @@ const QUIZ_DATA = [
       "Học thuyết tế bào, học thuyết tiến hóa, học thuyết đấu tranh giai cấp.",
       "Định luật bảo toàn và chuyển hóa năng lượng, học thuyết tiến hóa, học thuyết giá trị thặng dư."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -473,7 +473,7 @@ const QUIZ_DATA = [
       "Bản chất của thế giới là vật chất.",
       "Bản chất của thế giới là ý niệm"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -487,7 +487,7 @@ const QUIZ_DATA = [
       "Phép biện chứng chất phác thời cổ đại; phép biện chứng duy vật của chủ nghĩa Mác - Lênin và phép biện chứng duy tâm thời trung cổ.",
       "Phép biện chứng duy tâm cổ điển Đức; phép biện chứng duy vật của chủ nghĩa Mác - Lênin và phép biện chứng chủ nghĩa xã hội không tưởng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -501,7 +501,7 @@ const QUIZ_DATA = [
       "Quan điểm biện chứng duy vật thừa nhận sự chuyển hoá lẫn nhau của giới tự nhiên vô cơ.",
       "Quan điểm biện chứng duy vật thừa nhận thế giới không có sự chuyển hóa của giới tự nhiên vô cơ."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -529,7 +529,7 @@ const QUIZ_DATA = [
       "Tính chất không tồn tại thực của thế giới vật chất.",
       "Tính chất vô tận của thế giới vật chất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -585,7 +585,7 @@ const QUIZ_DATA = [
       "Tính kế thừa và cụ thể.",
       "Tính lịch sử và tính đảng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -599,7 +599,7 @@ const QUIZ_DATA = [
       "Hạt nhân lý luận của thế giới quan.",
       "Một loại hình thế giới quan giống như các loại hình thế giới quan khác."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -613,7 +613,7 @@ const QUIZ_DATA = [
       "Chủ nghĩa Mác là khoa học của mọi khoa học, là thế giới quan và phương pháp luận chung của mọi nhận thức và thực tiễn.",
       "Chủ nghĩa Mác là học thuyết được xây dựng trên cơ sở kế thừa những tinh hoa của lịch sử tư tưởng nhân loại và thực tiễn cách mạng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -641,7 +641,7 @@ const QUIZ_DATA = [
       "Coi thực tiễn là trung tâm.",
       "Phép biện chứng duy vật."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -655,7 +655,7 @@ const QUIZ_DATA = [
       "Kiềm hãm phát triển tư duy con người, xã hội.",
       "Đóng góp cho sự phát triển tư duy con người, xã hội"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -683,7 +683,7 @@ const QUIZ_DATA = [
       "Tính chủ quan.",
       "Tính nguỵ biện."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -725,7 +725,7 @@ const QUIZ_DATA = [
       "Bản chất của thế giới là ý thức.",
       "Bản chất của thế giới là vật chất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -739,7 +739,7 @@ const QUIZ_DATA = [
       "Chủ nghĩa duy vật biện chứng.",
       "Chủ nghĩa duy vật nói chung."
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -753,7 +753,7 @@ const QUIZ_DATA = [
       "Tư duy của con người đạt trình độ khái quát cao và xuất hiện tầng lớp trí thức.",
       "Khi con người biết ngạc nhiên, hoài nghi, hụt hẫng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -767,7 +767,7 @@ const QUIZ_DATA = [
       "Nghiên cứu những hiện tượng xảy ra trong tự nhiên, xã hội và tư duy.",
       "Nghiên cứu những vấn đề chung nhất của tự nhiên, của xã hội và con người."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -781,7 +781,7 @@ const QUIZ_DATA = [
       "Giữa ý thức và vật thể: cái nào có trước cái nào có sau? cái nào quyết định cái nao?; Và con người có nhận biết được các vật thể không?",
       "Giữa vật chất và ý thức: cái nào có trước, cái nào có sau? cái nào lệ thuộc cái nào?; Và con người có khả năng nhận biết được chính mình không?"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -795,7 +795,7 @@ const QUIZ_DATA = [
       "Giải quyết vấn đề cơ bản của triết học.",
       "Quan niệm về con người trong thế giới."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -809,7 +809,7 @@ const QUIZ_DATA = [
       "Bản chất của thế giới là vật chất; vật chất là tính thứ nhất, ý thức là tính thứ hai; vật chất là cái có trước và quyết định ý thức của con người.",
       "Bản chất của thế giới là ý thức; ý thức là cái có trước và quyết định, vất chất là cái có sau và bị quyết định."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -823,7 +823,7 @@ const QUIZ_DATA = [
       "Bản chất của thế giới là ý thức, ý thức là tính thứ nhất, vật chất là tính thứ hai; ý thức là cái có trước và quyết định vật chất.",
       "Bản chất của thế giới là vật chất, tạo nên các vật thể là tính thứ hai; vật thể là cái có trước và quyết định vật chất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -837,7 +837,7 @@ const QUIZ_DATA = [
       "Tiêu tan giới hạn hiểu biết trước đây về vật chất, quan điểm siêu hình về vật chất.",
       "Tiêu tan quan niệm cho rằng vật chất là nguyên tử, quan điểm siêu hình về vật chất."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -851,7 +851,7 @@ const QUIZ_DATA = [
       "Vật chất nói chung tồn tại tách rời với các dạng tồn tại cụ thể của vật chất.",
       "Ý thức con người là sự phản ánh đối với vật chất, còn vật chất là cái được ý thức phản ánh."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -865,7 +865,7 @@ const QUIZ_DATA = [
       "Là tất cả những gì đem lại cho con người cảm giác.",
       "Là toàn bộ thế giới khách quan."
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Theo định nghĩa của Lênin, thuộc tính quan trọng và đặc trưng nhất của vật chất là 'tồn tại khách quan' độc lập với ý thức."
   },
   {
