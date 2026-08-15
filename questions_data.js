@@ -2685,7 +2685,7 @@ const QUIZ_DATA = [
       "Trình độ phát triển của lực lượng sản xuất.",
       "Trình độ phát triển của đạo đức, pháp luật, tôn giáo."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2713,7 +2713,7 @@ const QUIZ_DATA = [
       "Bản chất con người không phải là cái trừu tượng cố hữu của cá nhân riêng biệt. Trong tính hiện thực của nó, bản chất con người là tổng hòa những quan hệ xã hội.",
       "Con người là vừa là chủ thể của lịch sử vừa là sản phẩm của lịch sử."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "C. Mác: 'Trong tính hiện thực của nó, bản chất con người là tổng hòa những quan hệ xã hội'."
   },
   {
@@ -2755,7 +2755,7 @@ const QUIZ_DATA = [
       "Những người chống lại giai cấp thống trị phản động.",
       "Những người nghèo khổ."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "V.I. Lênin khẳng định: Quy luật thống nhất và đấu tranh của các mặt đối lập là hạt nhân của phép biện chứng duy vật."
   },
   {
@@ -2867,7 +2867,7 @@ const QUIZ_DATA = [
       "Khoa học kỹ thuật.",
       "Công cụ lao động."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2895,7 +2895,7 @@ const QUIZ_DATA = [
       "Tư liệu lao động và đối tượng lao động.",
       "Công cụ lao động và tư liệu lao động."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2909,7 +2909,7 @@ const QUIZ_DATA = [
       "Lực lượng sản xuất quyết định sự phân công lao động xã hội, do đó, quyết định quan hệ giữa các tập đoàn người về mặt sở hữu tư liệu sản xuất.",
       "Sự phát triển của lực lượng sản xuất là do sự thay đổi của quan hệ sản xuất quy định."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2951,7 +2951,7 @@ const QUIZ_DATA = [
       "Sự biến đổi, phát triển của kĩ thuật sản xuất.",
       "Sự phát triển của cách thức tổ chức sản xuất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2979,7 +2979,7 @@ const QUIZ_DATA = [
       "Tổng hoà những quan hệ xã hội/ C. Mác.",
       "Tổng hoà các quan hệ tự nhiên và xã hội/ C. Mác."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2993,7 +2993,7 @@ const QUIZ_DATA = [
       "Thực thể chính trị, có tư duy và văn hoá.",
       "Thực thể tự nhiên và xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3007,7 +3007,7 @@ const QUIZ_DATA = [
       "Là động lực tiến bộ lịch sử; hình thành xã hội mới, tiến bộ hơn.",
       "Là điều kiện tiến bộ lịch sử; hình thành nền văn minh nhân loại."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3021,7 +3021,7 @@ const QUIZ_DATA = [
       "Công xã nguyên thủy, chiếm hữu nô lệ, phong kiến, tư bản chủ nghĩa, cộng sản chủ nghĩa.",
       "Công xã nguyên thủy, chiếm hữu nô lệ, phong kiến, tư bản chủ nghĩa, xã hội chủ nghĩa."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3035,7 +3035,7 @@ const QUIZ_DATA = [
       "Toàn bộ cơ sở vật chất - kỹ thuật của xã hội.",
       "Đời sống vật chất của xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3077,7 +3077,7 @@ const QUIZ_DATA = [
       "Lực lượng sản xuất là nội dung, quan hệ sản xuất là hình thức.",
       "Lực lượng sản xuất thường biến đổi chậm hơn so với quan hệ sản xuất."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3105,7 +3105,7 @@ const QUIZ_DATA = [
       "Sự đối lập giữa giàu và nghèo.",
       "Sự khác nhau về mức thu nhập."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3119,7 +3119,7 @@ const QUIZ_DATA = [
       "Sự phát triển của các hình thái kinh tế - xã hội ngoài tuân theo các quy luật chung còn bị chi phối bởi điều kiện lịch sử cụ thể của mỗi quốc gia dân tộc.",
       "Sự phát triển của các hình thái kinh tế - xã hội tuân theo các quy luật chung."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3147,7 +3147,7 @@ const QUIZ_DATA = [
       "Nhu cầu và lợi ích.",
       "Lý tưởng sống."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3161,7 +3161,7 @@ const QUIZ_DATA = [
       "Thay đổi quan hệ sản xuất thống trị.",
       "Sự thống trị của cơ sở hạ tầng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3175,7 +3175,7 @@ const QUIZ_DATA = [
       "Nhà nước.",
       "Triết học."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3189,7 +3189,7 @@ const QUIZ_DATA = [
       "Thông qua các quan hệ hiện thực của con người.",
       "Thông qua phẩm chất và hình dạng của con người."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3217,7 +3217,7 @@ const QUIZ_DATA = [
       "Nhà nước, chính đảng, đoàn thể.",
       "Các quan hệ sản xuất của xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3231,7 +3231,7 @@ const QUIZ_DATA = [
       "Những tập đoàn người khác nhau về trình độ phát triển về kinh tế và văn hóa. Nguồn gốc của giai cấp là vai trò quản lý xã hội.",
       "Những tập đoàn người khác nhau về điều kiện sinh sống trong xã hội. Nguồn gốc của giai cấp là ở quan hệ về lợi ích kinh tế."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3245,7 +3245,7 @@ const QUIZ_DATA = [
       "Quy luật về sự phù hợp của quan hệ sản xuất với trình độ phát triển của lực lượng sản xuất.",
       "Quy luật đấu tranh giai cấp"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3287,7 +3287,7 @@ const QUIZ_DATA = [
       "Có ý nghĩa quyết định trực tiếp trực đến toàn bộ lịch sử tiến hóa nhân loại, làm nên các thời đại văn minh trong lịch sử.",
       "Có ý nghĩa quyết định trực tiếp đến thành công hay thất bại của các phong trào cách mạng trong từng hoàn cảnh cụ thể."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3301,7 +3301,7 @@ const QUIZ_DATA = [
       "Trí tuệ năng động, sáng tạo; Thương yêu quần chúng, nhân dân; Phẩm chất trong sáng, hòa đồng với giai cấp và dân tộc.",
       "Trí tuệ nhìn xa, trông rộng; Năng lực chuyên môn vững vàng; Phẩm chất thẳng thắn, trung thực."
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3343,7 +3343,7 @@ const QUIZ_DATA = [
       "Năng xuất lao động thấp.",
       "Từ một nền sản xuất nhỏ là phổ biến quá độ lên chủ nghĩa xã hội không qua chế độ tư bản chủ nghĩa."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3357,7 +3357,7 @@ const QUIZ_DATA = [
       "Mặt vật chất và mặt ý thức.",
       "Mặt kỹ thuật và mặt xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3371,7 +3371,7 @@ const QUIZ_DATA = [
       "Sự thay đổi căn bản về chất, từ hình thái kinh tế - xã hội này, lên hình thái kinh tế - xã hội cao hơn; Là đỉnh cao, điểm nút giải quyết mâu thuẫn, đối kháng giai cấp.",
       "Là sự thay đổi thật sự về chất, từ hình thái kinh tế - xã hội thấp lên hình thái kinh tế - xã hội cao; Là thời điểm quyết định giải quyết mâu thuẫn và đối kháng giai cấp."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3385,7 +3385,7 @@ const QUIZ_DATA = [
       "Quán triệt vai trò sáng tạo lịch sử của QCND, tin tưởng và biết huy động sức mạnh to lơn cùa QCND; Đồng thời, phát hiện và bầu người có tài, có đức làm NLĐ.",
       "Quán triệt vai trò quyết định lịch sử của QCND, tin tưởng và động viên mọi tầng lớp nhân dân làm cách mạng; Đồng thời, bầu ra người yêu nước, thương dân làm NLĐ."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3399,7 +3399,7 @@ const QUIZ_DATA = [
       "Chế độ tư bản chủ nghĩa.",
       "Chế độ xã hội có phân chia thành đẳng cấp."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3413,7 +3413,7 @@ const QUIZ_DATA = [
       "NNVS chỉ bảo vệ quyền lợi của người lao động.",
       "NNVS không chỉ bảo vệ lợi ích của người lao động mà còn bảo vệ lợi ích hợp pháp của cả giai cấp khác trong xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3427,7 +3427,7 @@ const QUIZ_DATA = [
       "Trí lực lao động không ngừng được nâng cao.",
       "Năng lực cạnh tranh trong công việc được nâng cao."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3441,7 +3441,7 @@ const QUIZ_DATA = [
       "Sản xuất vật chất, sản xuất tinh thần và sản xuất ra bản thân con người.",
       "Sản xuất vật chất, sản xuất văn hóa và sản xuất môi trường sinh thái."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3455,7 +3455,7 @@ const QUIZ_DATA = [
       "Tư liệu lao động và người lao động.",
       "Tư liệu sản xuất và người lao động."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3469,7 +3469,7 @@ const QUIZ_DATA = [
       "Mối quan hệ giữa con người với tự nhiên.",
       "Mối quan hệ giữa con người với tự nhiên và với nhau."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3511,7 +3511,7 @@ const QUIZ_DATA = [
       "Phương tiện lao động.",
       "Tư liệu lao động."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3525,7 +3525,7 @@ const QUIZ_DATA = [
       "Phương thức sản xuất.",
       "Điều kiện môi trường."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3553,7 +3553,7 @@ const QUIZ_DATA = [
       "Quần chúng nhân dân không ngừng nổi dậy đấu tranh chống các thế lực phản động trong xã hội.",
       "Mâu thuẫn giai - tầng trong xã hội, sự thay đổi của quan hệ sản xuất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3567,7 +3567,7 @@ const QUIZ_DATA = [
       "Từ chế độ người bóc lột người và phân công lao động xã hội.",
       "Từ chế độ lao động làm thuê và xuất hiện chế độ tư hữu."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3581,7 +3581,7 @@ const QUIZ_DATA = [
       "Chế độ tư bản chủ nghĩa.",
       "Chế độ xã hội có phân chia thành đẳng cấp."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3609,7 +3609,7 @@ const QUIZ_DATA = [
       "Là động lực tiến bộ lịch sử. Hình thành xã hội mới, tiến bộ hơn.",
       "Là điều kiện tiến bộ lịch sử. Hình thành nền văn minh nhân loại."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3623,7 +3623,7 @@ const QUIZ_DATA = [
       "Giai cấp.",
       "Tự do."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3637,7 +3637,7 @@ const QUIZ_DATA = [
       "Yêu cầu của đấu tranh giai cấp, là công cụ của giai cấp cầm quyền.",
       "Yêu cầu của quản lý xã hội, mở rộng hợp tác quốc tế."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3651,7 +3651,7 @@ const QUIZ_DATA = [
       "Nhà nước tư sản.",
       "Nhà nước vô sản."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3665,7 +3665,7 @@ const QUIZ_DATA = [
       "Lý tưởng cao đẹp của các lãnh tụ cách mạng kết hợp các giai tầng lại với nhau.",
       "Do sự xung đột của các thế lực tôn giáo trong xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3693,7 +3693,7 @@ const QUIZ_DATA = [
       "Sự thay đổi căn bản về chất, từ hình thái kinh tế - xã hội này, lên hình thái kinh tế - xã hội cao hơn; Là đỉnh cao, điểm nút giải quyết mâu thuẫn, đối kháng giai cấp.",
       "Là sự thay đổi thật sự về chất, từ hình thái kinh tế - xã hội thấp lên hình thái kinh tế - xã hội cao; Là thời điểm quyết định giải quyết mâu thuẫn và đối kháng giai cấp."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3721,7 +3721,7 @@ const QUIZ_DATA = [
       "Mâu thuẫn giữa lực lượng sản xuất và quan hệ sản xuất.",
       "Mâu thuẫn giữa nhân dân nghèo khổ với giới quan chức giàu có."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3777,7 +3777,7 @@ const QUIZ_DATA = [
       "Do có nhân cách khác nhau.",
       "Do có hoàn cảnh khác nhau."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3791,7 +3791,7 @@ const QUIZ_DATA = [
       "Là chủ thể của các cuộc cách mạng xã hội, đưa xã hội phát triển.",
       "Là chủ thể đấu tranh giai cấp, là động lực phát triển của lịch sử."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3805,7 +3805,7 @@ const QUIZ_DATA = [
       "Là lực lượng sản xuất vất chất cơ bản của mọi xã hôi; sáng tạo ra các giá trị tinh thần của xã hôi; động lực cơ bản của mọi cuộc cách mạng trong lịch sử.",
       "Là lực lượng sản xuất vật chất cơ bản của xã hội; thực hiện các cuộc đấu tranh giải phóng dân tộc; gìn giữ hòa bình thề giới."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3819,7 +3819,7 @@ const QUIZ_DATA = [
       "Cá nhân năng lực và phẩm chất kiệt xuất về một lĩnh vực hoạt động nhất định.",
       "Cá nhân kiệt xuất do phong trào cách mạng của quần chúng nhân dân tạo ra."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3833,7 +3833,7 @@ const QUIZ_DATA = [
       "Các giai cấp bị trị có tinh thần cách mạng triệt để nhất.",
       "Các chính đảng cách mạng, có sự ủng hộ đông đảo của quần chúng nhân dân trong xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3847,7 +3847,7 @@ const QUIZ_DATA = [
       "Trí tuệ năng động, sáng tạo; Thương yêu quần chúng, nhân dân; Phẩm chất trong sáng, hòa đồng với giai cấp và dân tộc.",
       "Trí tuệ nhìn xa, trông rộng; Năng lực chuyên môn vững vàng; Phẩm chất thẳng thắn, trung thực."
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3861,7 +3861,7 @@ const QUIZ_DATA = [
       "Giữa giai cấp cơ bản và giai cấp không cơ bản.",
       "Giữa giai cấp bóc lột và giai cấp không cơ bản."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3875,7 +3875,7 @@ const QUIZ_DATA = [
       "Chính trị.",
       "Văn hóa."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3889,7 +3889,7 @@ const QUIZ_DATA = [
       "Lật đổ chế độ tư bản chủ nghĩa.",
       "Thiết lập quyền thống trị của giai cấp vô sản trên toàn thế giới."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3903,7 +3903,7 @@ const QUIZ_DATA = [
       "NNVS chỉ bảo vệ quyền lợi của người lao động.",
       "NNVS không chỉ bảo vệ lợi ích của người lao động mà còn bảo vệ lợi ích hợp pháp của cả giai cấp khác trong xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3931,7 +3931,7 @@ const QUIZ_DATA = [
       "Vì nó sử dụng bạo lực cách mạng để giành lấy chính quyền.",
       "Vì nó sẽ xóa bỏ hoàn toàn chế độ người bóc lột người."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3945,7 +3945,7 @@ const QUIZ_DATA = [
       "Yếu tố sinh học và xã hội.",
       "Không phải yếu tố sinh học và xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3959,7 +3959,7 @@ const QUIZ_DATA = [
       "Vai trò chủ thể của con người trong lịch sử.",
       "Quy luật sinh học là quy luật duy nhất chi phối vạn vật trong vũ trụ."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -3973,7 +3973,7 @@ const QUIZ_DATA = [
       "Học thuyết về hình thái kinh tế-xã hội.",
       "Chủ nghĩa duy vật lịch sử."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4001,7 +4001,7 @@ const QUIZ_DATA = [
       "Năng xuất lao động thấp.",
       "Từ một nền sản xuất nhỏ là phổ biến quá độ lên chủ nghĩa xã hội không qua chế độ tư bản chủ nghĩa."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4015,7 +4015,7 @@ const QUIZ_DATA = [
       "Sự phát triển toàn diện con người.",
       "Sự phát triển của lực lượng sản xuất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4029,7 +4029,7 @@ const QUIZ_DATA = [
       "Kết hợp đổi mới kinh tế và đổi mới chính trị.",
       "Chỉ cần đổi mới chính trị."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4071,7 +4071,7 @@ const QUIZ_DATA = [
       "Thống nhất và đấu tranh của các mặt đối lập.",
       "Có lúc hoàn toàn đối lập nhau, có khi hoàn toàn thống nhất với nhau."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4099,7 +4099,7 @@ const QUIZ_DATA = [
       "Kết hợp đồng thời phát triển lực lượng sản xuất với từng bước xây dựng quan hệ sản xuất mới phù hợp.",
       "Củng cố xây dựng kiến trúc thượng tầng mới cho phù hợp với cơ sở hạ tầng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4113,7 +4113,7 @@ const QUIZ_DATA = [
       "Quan hệ giữa vật chất và tinh thần.",
       "Quan hệ giữa tồn tại xã hội với ý thức xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4155,7 +4155,7 @@ const QUIZ_DATA = [
       "Xác lập phương pháp luận khoa học chung nhất để giải thích các hiện tượng xã hội.",
       "Xác lập phương pháp luận chung ở tầm “duy nhất khoa học” cho mọi quá trình nghiên cứu."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4169,7 +4169,7 @@ const QUIZ_DATA = [
       "Mọi học thuyết đạo đức có từ trước đến nay, xét đến cùng, đều là sản phẩm của tình hình kinh tế lúc bấy giờ.",
       "Hoạt động của con người khác với động vật là có ý thức, vì thế ý thức của con người quyết định sự tồn tại của họ."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4197,7 +4197,7 @@ const QUIZ_DATA = [
       "Vấn đề quan hệ giữa linh hồn và thể xác.",
       "Vấn đề bản chất cuộc sống."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4211,7 +4211,7 @@ const QUIZ_DATA = [
       "Quan hệ giao tiếp.",
       "Hình thức giao tiếp."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4225,7 +4225,7 @@ const QUIZ_DATA = [
       "Có nền văn hoá tiên tiến, đậm đà bản sắc dân tộc.",
       "Có thể tạo ra năng suất lao động cao hơn."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4239,7 +4239,7 @@ const QUIZ_DATA = [
       "Kinh nghiệm các nước trên thế giới cho thấy sự tồn tại của nền kinh tế nhiều thành phần là tất yếu.",
       "Thực tế phát triển lực lượng sản xuất ở nước ta còn đang ở nhiều trình độ khác nhau."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4253,7 +4253,7 @@ const QUIZ_DATA = [
       "Giúp hiểu đầy đủ, cụ thể từng thời đại lịch sử, từng quốc gia dân tộc.",
       "Chỉ ra sự phát triển của lịch sử nhân loại là một quá trình lịch sử - tự nhiên."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4267,7 +4267,7 @@ const QUIZ_DATA = [
       "Quan hệ với nhau trong sản xuất.",
       "Thực hiện sản xuất vật chất ở mỗi giai đoạn lịch sử."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4295,7 +4295,7 @@ const QUIZ_DATA = [
       "Quy định trình độ (tính chất) của lực lượng sản xuất và kiến trúc thượng tầng của xã hội.",
       "Quy định mọi quan hệ xã hội, nói lên thực chất của hình thái kinh tế - xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4323,7 +4323,7 @@ const QUIZ_DATA = [
       "Hình thái ý thức xã hội.",
       "Hình thái kinh tế - xã hội."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4337,7 +4337,7 @@ const QUIZ_DATA = [
       "Quần chúng nhân dân không ngừng nổi dậy đấu tranh chống các thế lực phản động trong xã hội.",
       "Mâu thuẫn giai - tầng trong xã hội, sự thay đổi của quan hệ sản xuất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -4351,7 +4351,7 @@ const QUIZ_DATA = [
       "Giúp hiểu đầy đủ, cụ thể từng thời đại lịch sử, từng quốc gia dân tộc.",
       "Chỉ ra sự phát triển của lịch sử nhân loại là một quá trình lịch sử - tự nhiên."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
