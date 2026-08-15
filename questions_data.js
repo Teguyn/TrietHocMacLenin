@@ -851,7 +851,7 @@ const QUIZ_DATA = [
       "Vật chất nói chung tồn tại tách rời với các dạng tồn tại cụ thể của vật chất.",
       "Ý thức con người là sự phản ánh đối với vật chất, còn vật chất là cái được ý thức phản ánh."
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -865,7 +865,7 @@ const QUIZ_DATA = [
       "Là tất cả những gì đem lại cho con người cảm giác.",
       "Là toàn bộ thế giới khách quan."
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Theo định nghĩa của Lênin, thuộc tính quan trọng và đặc trưng nhất của vật chất là 'tồn tại khách quan' độc lập với ý thức."
   },
   {
@@ -893,7 +893,7 @@ const QUIZ_DATA = [
       "Vận động của vật chất là sự tự vận động.",
       "Vận động của vật chất là do sự tác động từ các yếu tố bên ngoài."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -935,7 +935,7 @@ const QUIZ_DATA = [
       "Bộ óc.",
       "Ngôn ngữ."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -949,7 +949,7 @@ const QUIZ_DATA = [
       "Thuộc tính phản ánh cũng phát triển từ thấp đến cao, từ đơn giản đến phức tạp.",
       "Ý thức là thuộc tính của một dạng vật chất."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -963,7 +963,7 @@ const QUIZ_DATA = [
       "Ý thức tác động đến hiện thực thông qua hoạt động lý luận.",
       "Ý thức sáng tạo ra toàn bộ hiện thực."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -977,7 +977,7 @@ const QUIZ_DATA = [
       "Tính cảm.",
       "Tri thức."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -991,7 +991,7 @@ const QUIZ_DATA = [
       "Tình cảm là yếu tố quan trọng nhất trong kết cấu của ý thức.",
       "Ý thức chỉ đạo mọi hành vi của con người."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1005,7 +1005,7 @@ const QUIZ_DATA = [
       "Ý thức được hình thành trực tiếp từ lao động.",
       "Ý thức là quá trình tiến hóa cao của giới tự nhiên."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1019,7 +1019,7 @@ const QUIZ_DATA = [
       "Là sự phản ánh hiện thực khách quan vào đầu óc con người một cách năng động và sáng tạo.",
       "Là sự phản ánh nguyên vẹn cái bên ngoài."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1061,7 +1061,7 @@ const QUIZ_DATA = [
       "Bước nhảy.",
       "Chất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1089,7 +1089,7 @@ const QUIZ_DATA = [
       "Là biện chứng không thể nhận thức được về nó.",
       "Là biện chứng của ý niệm tuyệt đối."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1131,7 +1131,7 @@ const QUIZ_DATA = [
       "Bước nhảy.",
       "Đột biến."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1145,7 +1145,7 @@ const QUIZ_DATA = [
       "Nhận thức là hình ảnh chủ quan của thế giới khách quan.",
       "Nhận thức là sự phản ánh hiện thực khách quan vào bộ óc con người thông qua thực tiễn."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1159,7 +1159,7 @@ const QUIZ_DATA = [
       "Thực tiễn là hoạt động vật chất và tinh thần của con người.",
       "Thực tiễn là tiêu chuẩn của chân lý."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Thực tiễn là tiêu chuẩn khách quan duy nhất để kiểm tra chân lý."
   },
   {
@@ -1173,7 +1173,7 @@ const QUIZ_DATA = [
       "Chân lý là cái đưa lại lợi ích trực tiếp cho con người.",
       "Chân lý không phải bao giờ cũng thuộc về số đông."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1187,7 +1187,7 @@ const QUIZ_DATA = [
       "Hoạt động vật chất.",
       "Hoạt động vật chất của con người nhằm cải tạo tự nhiên và xã hội theo nhu cầu của con người ở mỗi giai đoạn lịch sử."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1201,7 +1201,7 @@ const QUIZ_DATA = [
       "Thực tiễn là điểm kết thúc của nhận thức.",
       "Thực tiễn là điểm khởi đầu và cũng là điểm kết thúc của một vòng khâu nhận thức."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1215,7 +1215,7 @@ const QUIZ_DATA = [
       "Tri thức phù hợp với hiện thực.",
       "Tri thức phù hợp với hiện thực và được thực tiễn kiểm nghiệm."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1229,7 +1229,7 @@ const QUIZ_DATA = [
       "Nhận thức không cần có thực tiễn.",
       "Nguồn gốc của nhận thức."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1271,7 +1271,7 @@ const QUIZ_DATA = [
       "Độ.",
       "Điểm nút."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1285,7 +1285,7 @@ const QUIZ_DATA = [
       "Sự vận động của các sự vật, hiện tượng.",
       "Những mối liên hệ, tương tác, chuyển hoá và vận động, phát triển theo quy luật của các sự vật, hiện tượng."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1327,7 +1327,7 @@ const QUIZ_DATA = [
       "Nhận thức đối tượng trong các mối liên hệ với các đối tượng khác, trong sự tĩnh tại, không vận động.",
       "Nhận thức đối tượng ở trạng thái tĩnh tại; nếu có sự biến đổi thì chỉ là sự biến đổi về số lượng, nguyên nhân của sự biến đổi nằm ở ngoài đối tượng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1341,7 +1341,7 @@ const QUIZ_DATA = [
       "Quy luật phủ định của phủ định.",
       "Quy luật quan hệ sản xuất phù hợp với trình độ phát triển của lực lượng sản xuất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1355,7 +1355,7 @@ const QUIZ_DATA = [
       "Quy luật phủ định của phủ định.",
       "Quy luật quan hệ sản xuất phù hợp với trình độ phát triển của lực lượng sản xuất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1383,7 +1383,7 @@ const QUIZ_DATA = [
       "Phát triển không chỉ là sự thay đổi về số lượng và khối lượng mà còn là sự thay đổi về chất của sự vật hiện tượng.",
       "Phát triển là sự vận động."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1397,7 +1397,7 @@ const QUIZ_DATA = [
       "Mọi sự biến đổi về lượng đều dẫn đến những biến đổi về chất.",
       "Mọi sự thay đổi đều có thể được coi là bước nhảy."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1411,7 +1411,7 @@ const QUIZ_DATA = [
       "Chân lý có tính cụ thể.",
       "Chân lý có tính trừu tượng."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1453,7 +1453,7 @@ const QUIZ_DATA = [
       "Tổng số các thuộc tính của sự vật.",
       "Sự thống nhất hữu cơ giữa các thuộc tính cơ bản của sự vật."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1467,7 +1467,7 @@ const QUIZ_DATA = [
       "Không có cái gì là tuyệt đối cả.",
       "Chỉ tuyệt đối khi đặt nó trong trường hợp cụ thể."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1481,7 +1481,7 @@ const QUIZ_DATA = [
       "Phát triển của sự vật có tính kế thừa, nhưng trên cơ sở có phê phán, chọn lọc, cải tạo và phát triển.",
       "Phát triển của sự vật có tính kế thừa, nhưng là quá trình bằng phẳng liên tục theo đường thẳng đứng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1495,7 +1495,7 @@ const QUIZ_DATA = [
       "Sự thống nhất và đấu tranh của các mặt đối lập là không thể tách rời nhau. Không có “sự thống nhất của các mặt đối lập” thì cũng không có “sự đấu tranh của các mặt đối lập”.",
       "Sự đấu tranh của các mặt đối lập vừa tương đối, vừa tuyệt đối."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1509,7 +1509,7 @@ const QUIZ_DATA = [
       "Phải xem xét tất cả các mặt, các mối liên hệ và các khâu trung gian của sự vật, đồng thời phải nắm được và đánh giá đúng vị trí, vai trò của từng mặt, từng mối liên hệ tồn tại trong sự vật.",
       "Phải xem xét sự vật trong từng trường hợp, hoàn cảnh cụ thể."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1537,7 +1537,7 @@ const QUIZ_DATA = [
       "Hoạt động thực nghiệm khoa học.",
       "Hoạt động cải tạo xã hội."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1551,7 +1551,7 @@ const QUIZ_DATA = [
       "Ý chí.",
       "Tiềm thức."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1565,7 +1565,7 @@ const QUIZ_DATA = [
       "Từ trực quan sinh động đến tư duy trừu tượng, từ tư duy trừu tượng đến hệ thống khái niệm.",
       "Từ trực quan sinh động đến tư duy trừu tượng, từ tư duy trừu tượng đến thực tiễn."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1579,7 +1579,7 @@ const QUIZ_DATA = [
       "Tính khách quan, tính đặc thù, tính đa dạng và phong phú.",
       "Tính khách quan, tính đa dạng và phong phú."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1593,7 +1593,7 @@ const QUIZ_DATA = [
       "Vật chất có trước, ý thức có sau, vật chất quyết định ý thức, ý thức có thể tác động trở lại vật chất thông qua hoạt động của con người.",
       "Vật chất có trước, ý thức có sau, vật chất quyết định ý thức, ý thức không thể tác động trở lại vật chất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1607,7 +1607,7 @@ const QUIZ_DATA = [
       "Sự thay đổi vị trí của các sự vật hiện tượng trong không gian, thời gian.",
       "Mọi sự biến đổi nói chung của các sự vật hiện tượng trong không gian và thời gian."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1621,7 +1621,7 @@ const QUIZ_DATA = [
       "Ý thức tác động trở lại vật chất.",
       "Quan hệ biện chứng giữa nhận thức và thực tiễn."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1649,7 +1649,7 @@ const QUIZ_DATA = [
       "Nguyên lý về sự tồn tại khách quan của thế giới vật chất.",
       "Nguyên lý về tính đa dạng, phong phú của thế giới vật chất."
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1663,7 +1663,7 @@ const QUIZ_DATA = [
       "Nguyên lý về sự tồn tại khách quan của thế giới.",
       "Nguyên lý ý thức tác động đến vật chất."
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1677,7 +1677,7 @@ const QUIZ_DATA = [
       "Lý luận về mối qun hệ biện chứng giữa vật chất và ý thức.",
       "Lý luận về quan hệ biện chứng giữa nhận thức và thực tiễn."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1705,7 +1705,7 @@ const QUIZ_DATA = [
       "Nguyên lý về mối liên hệ phổ biến và sự phát triển.",
       "Nguyên lý về tính liên tục và tính gián đoạn của thế giới vật chất."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1719,7 +1719,7 @@ const QUIZ_DATA = [
       "Nguyên lý về sự tồn tại khách quan của thế giới vật chất.",
       "Nguyên lý về tính đa dạng, phong phú của thế giới vật chất."
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1747,7 +1747,7 @@ const QUIZ_DATA = [
       "Đồng hóa, dị hóa.",
       "Vận động."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1761,7 +1761,7 @@ const QUIZ_DATA = [
       "Phải xuất phát từ hiện thực khách quan, tôn trọng và căn cứ vào khả năng thực tế để xây dựng mục tiêu, kế hoạch; Đồng thời phát huy hiệu quả điều kiện vất chất hiện có.",
       "Phải xuất phát từ thực tế khách quan và ý chí, nghị lực để xây dựng mục tiêu, kế hoạch; Đồng thời phát huy tinh thần và hiệu quả sử dụng cơ sở vật chất."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1775,7 +1775,7 @@ const QUIZ_DATA = [
       "Cần chủ động tích lũy về lượng để tạo điều kiện phát triển về chất; Đồng thời, hoàn thiện chất mới bằng việc huy động, khai thác các nguồn lực để tích lũy về lượng.",
       "Cần chủ động tích lũy lượng và chất để phát triển; Đồng thời, khai thác, huy động chất mới phù hợp với hoàn cảnh cụ thể."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1789,7 +1789,7 @@ const QUIZ_DATA = [
       "Phải hiểu đúng mâu thuẫn và giải quyết đồng bộ các loại mâu thuẫn; Đồng thơi, quán triệt quan điểm thực tiển trong xem xét và giải quyết mâu thuẫn cho sự vật phát triển.",
       "Phải tôn trọng mâu thuẫn, nhận thức đúng và giải quyết hợp lý các mâu thuẫn; Đồng thời, quán triệt quan điểm toàn diện và lịch sử cụ thể trong xem xét và giải quyết mâu thuẫn cho sự vật phá triển."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1803,7 +1803,7 @@ const QUIZ_DATA = [
       "Thế giới thống nhất ở tính vật chất.",
       "Thế giới thống nhất ở ý thức"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1817,7 +1817,7 @@ const QUIZ_DATA = [
       "Tính quy định về lượng nói lên mặt thường xuyên biến đổi của sự vật.",
       "Tính quy định về chất không có tính ổn định."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1831,7 +1831,7 @@ const QUIZ_DATA = [
       "CNDV thừa nhận nhận thức là sự phản ánh hiện thực khách quan vào đầu óc con người.",
       "CNDV biện chứng thừa nhận nhận thức là quá trình biện chứng xuất phát từ thực tiễn và quay về phục vụ thực tiễn."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1859,7 +1859,7 @@ const QUIZ_DATA = [
       "Ý thức là sản phẩm xã hội, là một hiện tượng xã hội.",
       "Ý thức là hiện tượng cá nhân, vì nó tồn tại trong bộ óc của các con người cụ thể."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1873,7 +1873,7 @@ const QUIZ_DATA = [
       "Khi lượng của sự vật có sự thay đổi đến một mức độ nào đó thì chất của sự vật mới thay đổi.",
       "Khi lượng của sự vật thay đổi thì chất của sự vật cũng thay đổi theo, sự vật mới xuất hiện với chất mới và lượng mới thống nhất với nhau."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1887,7 +1887,7 @@ const QUIZ_DATA = [
       "Tổng hợp những cảm giác.",
       "Sự chụp lại thế giới khách quan để có hình ảnh nguyên vẹn về nó."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1901,7 +1901,7 @@ const QUIZ_DATA = [
       "Cần quán triệt quan điểm phát triển trong nhận thức cũng như hoạt động thực tiễn; Tạo môi trường, điều kiện, cơ hội cho mọi đối tượng được phát triển.",
       "Cần quán triệt quan điểm phát triển trong hoạt động sản xuất vật chất cũng như trong tư duy lý luận."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1915,7 +1915,7 @@ const QUIZ_DATA = [
       "Chân lý là tri thức đúng sẽ hướng dẫn hoạt động thực tiễn phát triển kinh tế- xã hội; Đồng thời, hoạt động kinh tế- xã hội sẽ kiểm nghiệm và hoàn thiên chân lý đó.",
       "Chân lý là tri thức đúng được bắt nguồn từ ý thức thực tiễn trong đời sống kinh tế- xã hội; Đồng thời, hoạt động kinh tế- xã hội sẽ triển khai cụ thể chân lý đó."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1929,7 +1929,7 @@ const QUIZ_DATA = [
       "Hiểu rõ chân lý (tri thức lý luận, chủ trương, chính sách đúng) để nhận thức đúng thực tiễn kinh tế, xã hội; Đồng thời, tổng kết tri thức lý luận để kiểm nghiệm thực tiễn về kinh tế, xã hội đúng.",
       "Hiểu rõ chân lý (tri thức lý luận, chủ trương, chính sách đúng ) để hướng dẫn, chỉ đạo hoạt động thực tiễn về kinh tế, xã hội; Đồng thới, tổng kết thực tiễn để kiểm nghiệm và hoàn thiện chân lý, tức chủ trướng, chính sách đúng."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1957,7 +1957,7 @@ const QUIZ_DATA = [
       "Phải nhận thức sự vật như một hệ thống chỉnh thể bao gồm những mối liên hệ qua lại giữa các yếu tố của nó cũng như giữa nó với các sự vật khác",
       "Phải xem xét các yếu tố, các mối liên hệ cơ bản, quan trọng và bỏ qua những yếu tố, những mối liên hệ không cơ bản, không quan trọng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1971,7 +1971,7 @@ const QUIZ_DATA = [
       "Phải đặt họ vào những điều kiện, thời đại của mình mà đánh giá.",
       "Phải đặt họ trong những mối quan hệ với những người khác có thể ảnh hưởng đến sự phát triển của họ mà đánh giá."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1985,7 +1985,7 @@ const QUIZ_DATA = [
       "Bộ não người và hoạt động của nó.",
       "Lao động và ngôn ngữ."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2013,7 +2013,7 @@ const QUIZ_DATA = [
       "Nhận thức lý tính, nhận thức thông thường, nhận thức cảm tính, nhận thức lý luận.",
       "Nhận thức lý tính, nhận thức kinh nghiệm, nhận thức khoa học."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2027,7 +2027,7 @@ const QUIZ_DATA = [
       "Nhận thức cảm tính phản ánh sai sự vật.",
       "Nhận thức cảm tính chưa phản ánh đầy đủ và sâu sắc sự vật."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2083,7 +2083,7 @@ const QUIZ_DATA = [
       "Có vai trò khác nhau, cần phải xem xét mọi mối liên hệ.",
       "Có vai trò ngang bằng nhau, nên chỉ cần xem xét một mối liên hệ"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2097,7 +2097,7 @@ const QUIZ_DATA = [
       "Quan điểm duy tâm khách quan.",
       "Quan điểm duy tâm chủ quan"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2111,7 +2111,7 @@ const QUIZ_DATA = [
       "Quan điểm duy tâm khách quan.",
       "Quan điểm duy tâm chủ quan."
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2125,7 +2125,7 @@ const QUIZ_DATA = [
       "Quan điểm duy tâm khách quan.",
       "Quan điểm duy tâm chủ quan."
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2139,7 +2139,7 @@ const QUIZ_DATA = [
       "Tri thức; tình cảm; ý chí.",
       "Ý chí; nghị lực; tình cảm."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2153,7 +2153,7 @@ const QUIZ_DATA = [
       "Tri thức.",
       "Lý trí."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2167,7 +2167,7 @@ const QUIZ_DATA = [
       "Vật chất có trước ý thức; là sản phẩm của ý thức và tùy thuộc vào ý thức.",
       "Vật chất có trước ý thức; là cái tạo nên ý thức và tồn tại trong ý thức."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2209,7 +2209,7 @@ const QUIZ_DATA = [
       "Được xác lập trên nền tảng thế giới quan duy vật biện chứng; và sự thống nhất giữa nội dung (biện chứng khách quan) và phương pháp luận (biện chứng chủ quan).",
       "Được xác lập trên nền tảng thế giới quan tư duy biện chứng; và sự thống nhất giữa nội dung (thế giới khach quan) và phướng pháp luận (ý thức chủ quan)."
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2223,7 +2223,7 @@ const QUIZ_DATA = [
       "Sự tác động giữa các các sự vật, hiện tượng với nhau còn trong bản thân sự vật hiện tượng không có mối liên hệ.",
       "Sự quy định, sự tác động và chuyển hóa lẫn nhau giữa các sự vật, hiện tượng trong thế giới."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2237,7 +2237,7 @@ const QUIZ_DATA = [
       "Tinh khách quan, tính phổ biến và tính đa dạng, phong phú.",
       "Tính tuyệt đối, tính tương đối và tính vận động, phát triển."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2251,7 +2251,7 @@ const QUIZ_DATA = [
       "Quan điểm phiến diện.",
       "Quan điểm phát triển."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2279,7 +2279,7 @@ const QUIZ_DATA = [
       "Chuyển hoá.",
       "Tịnh tiến."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2293,7 +2293,7 @@ const QUIZ_DATA = [
       "Quá trình vận động của sự vật theo khuynh hướng đi lên: từ trình độ thấp đến trình độ cao, từ kém hoàn thiện đến hoàn thiện hơn, là sự biến đổi về chất của sự vật.",
       "Quá trình vận động mang tính lịch sử của thế giới vật chất theo khuynh hướng đi lên gắn vơi hoàn cảnh cụ thể."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2321,7 +2321,7 @@ const QUIZ_DATA = [
       "Thời điểm diễn ra sự thay đổi về chất của sự vật, hiện tượng.",
       "Lượng thay đổi đến một giới hạn nhất định thì dẫn đến sự thay đổi về chất."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2335,7 +2335,7 @@ const QUIZ_DATA = [
       "Khái niệm – Phán đoán – Suy lý.",
       "Khái niệm – Suy lý – Tri giác."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2349,7 +2349,7 @@ const QUIZ_DATA = [
       "Từ trực quan sinh động đến tư duy trừu tượng, từ tư duy trừu tượng đến hệ thống khái niệm.",
       "Từ trực quan sinh động đến tư duy trừu tượng, từ tư duy trừu tượng đến thực tiễn."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2405,7 +2405,7 @@ const QUIZ_DATA = [
       "Vừa có tính độc lập tương đối, vừa có mối quan hệ biện chứng.",
       "Tác động qua lại với nhau."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2433,7 +2433,7 @@ const QUIZ_DATA = [
       "Phương pháp biện chứng là phương pháp xem xét nguyên nhân của mọi biến đổi nằm ngoài đối tượng.",
       "Phương pháp biện chứng là phương pháp xem xét nguyên nhân của mọi biến đổi nằm bên trong đối tượng."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2447,7 +2447,7 @@ const QUIZ_DATA = [
       "Do môi trường khác nhau.",
       "Do con người khác nhau."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2461,7 +2461,7 @@ const QUIZ_DATA = [
       "Quy luật phủ định của phủ định.",
       "Quy luật đấu tranh giai cấp."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2475,7 +2475,7 @@ const QUIZ_DATA = [
       "Quan điểm phát triển.",
       "Quan điểm trừu tượng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2489,7 +2489,7 @@ const QUIZ_DATA = [
       "Phát triển, lịch sử - cụ thể.",
       "Lịch sử - cụ thể, toàn diện, phát triển."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2517,7 +2517,7 @@ const QUIZ_DATA = [
       "Lượng của sự vật thay đổi.",
       "Sự chuyển hóa từ chất thành lượng."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2545,7 +2545,7 @@ const QUIZ_DATA = [
       "Toàn bộ, đột biến.",
       "Lớn, đột biến."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2559,7 +2559,7 @@ const QUIZ_DATA = [
       "Nhận thức lý tính phản ánh, khái quát, trừu tượng, gián tiếp sự vật, hiện tượng trong tính tất yếu, chỉnh thể toàn diện.",
       "Nhận thức lý tính phản ánh cụ thể, rõ ràng, trực tiếp sự vật, hiện tượng trong tính tất yếu, chỉnh thể toàn diện."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2601,7 +2601,7 @@ const QUIZ_DATA = [
       "Quy luật mâu thuẫn.",
       "Quy luật tự nhiên."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2615,7 +2615,7 @@ const QUIZ_DATA = [
       "Không vận dụng quy luật phủ định của phủ định.",
       "Không vận dụng đúng quy luật tự nhiên."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2629,7 +2629,7 @@ const QUIZ_DATA = [
       "Sinh động, trừu tượng, trực tiếp, sâu sắc.",
       "Sinh động, cụ thể, trực tiếp, hời hợt."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2643,7 +2643,7 @@ const QUIZ_DATA = [
       "Sâu sắc, trừu tượng, gián tiếp, khái quát.",
       "Sinh động, trừu tượng, gián tiếp, sâu sắc."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2671,7 +2671,7 @@ const QUIZ_DATA = [
       "Đứng im tuyệt đối.",
       "Vận động trong cân bằng ."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
