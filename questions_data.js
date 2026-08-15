@@ -837,7 +837,7 @@ const QUIZ_DATA = [
       "Tiêu tan giới hạn hiểu biết trước đây về vật chất, quan điểm siêu hình về vật chất.",
       "Tiêu tan quan niệm cho rằng vật chất là nguyên tử, quan điểm siêu hình về vật chất."
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1005,7 +1005,7 @@ const QUIZ_DATA = [
       "Ý thức được hình thành trực tiếp từ lao động.",
       "Ý thức là quá trình tiến hóa cao của giới tự nhiên."
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1649,7 +1649,7 @@ const QUIZ_DATA = [
       "Nguyên lý về sự tồn tại khách quan của thế giới vật chất.",
       "Nguyên lý về tính đa dạng, phong phú của thế giới vật chất."
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -1985,7 +1985,7 @@ const QUIZ_DATA = [
       "Bộ não người và hoạt động của nó.",
       "Lao động và ngôn ngữ."
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2405,7 +2405,7 @@ const QUIZ_DATA = [
       "Vừa có tính độc lập tương đối, vừa có mối quan hệ biện chứng.",
       "Tác động qua lại với nhau."
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
@@ -2545,7 +2545,7 @@ const QUIZ_DATA = [
       "Toàn bộ, đột biến.",
       "Lớn, đột biến."
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Kiến thức trọng tâm theo giáo trình Triết học Mác - Lênin."
   },
   {
